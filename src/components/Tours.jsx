@@ -10,11 +10,7 @@ const Tours = () => {
         {tours.map(
           ({ id, img, date, title, info, location, duration, cost }) => {
             return (
-              <article
-                style={{ background: "pink" }}
-                className="tour-card"
-                key={id}
-              >
+              <article className="tour-card" key={id}>
                 <div className="tour-img-container">
                   <img src={img} className="tour-img" alt="" />
                   <p className="tour-date">{date}</p>
